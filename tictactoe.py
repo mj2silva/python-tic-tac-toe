@@ -1,4 +1,5 @@
 from Game import Game
+import os
 
 welcome_message = '''
 Welcome to mj2silva's Tic-Tac-Toe.
@@ -27,11 +28,13 @@ def check_option(option, valid_options):
 
 
 def play_game():
+    os.system('clear')
     game = Game()
     game.start()
 
 
 def show_info():
+    os.system('clear')
     info = '''
 This is a game developed by mj2silva for learning purposes.
 It was made with python3
@@ -63,6 +66,7 @@ def show_main_menu():
 
 
 def __main__():
+    os.system('clear')
     print(welcome_message)
     show_main_menu()
 
